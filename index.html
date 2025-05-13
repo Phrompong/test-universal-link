@@ -11,10 +11,8 @@
 
   try {
     if (isIOS) {
-      window.location = deepLink;
       setTimeout(() => (window.location = iosStore), 1500);
     } else if (isAndroid) {
-      window.location = deepLink;
       setTimeout(() => (window.location = androidStore), 1500);
     } else {
       alert("Unsupported platform. Please use a mobile device.");
@@ -23,17 +21,5 @@
 </script>
 
 <body>
-  <!-- <h1>Redirecting...</h1> -->
-
-  <a
-    href="com.surapich.medilance://change-password/12345"
-    style="
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    "
-  >
-    <h1>Open Medilance</h1>
-  </a>
+  <h1>Redirect...</h1>
 </body>
